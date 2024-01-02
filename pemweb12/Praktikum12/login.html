@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Login</title>
+      <!-- Link From Builder -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <style>
+         h2 {
+            color: goldenrod;
+         }
+         .form-control {
+            border: 1px black solid;
+         }
+         .btn {
+            background-color: aqua;
+            color: black;
+            border: 1px black solid;
+         }
+         .btn:hover {
+            background-color: black;
+            color: aqua;
+         }
+      </style>
+      <!-- Link Javascript -->
+      <script src="otentikasi.js"></script>
+   </head>
+   <body>
+      <h2 class="text-center mt-5">Login</h2>
+      <form>
+         <div class="form-group row justify-content-center mt-5">
+            <label for="username" class="col-md-1 col-form-label">Username</label>
+            <div class="col-md-4">
+               <input id="username" name="username" placeholder="Masukan username" type="text" class="form-control" required="required" />
+            </div>
+         </div>
+         <div class="form-group row justify-content-center">
+            <label for="password" class="col-md-1 col-form-label">Password</label>
+            <div class="col-md-4">
+               <input id="password" name="password" placeholder="Masukan password" type="password" class="form-control" required="required" />
+            </div>
+         </div>
+         <div class="form-group row mt-5">
+            <div class="offset-4 col-4 text-center">
+               <button onclick="validasiLogin()" value="Login" name="login" type="submit" class="btn">Login</button>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>

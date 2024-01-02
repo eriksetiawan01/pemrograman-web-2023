@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Image Picker</title>
+      <style>
+         body {
+            text-align: center;
+            background-color: antiquewhite;
+         }
+         select {
+            margin-top: 30px;
+            width: 25%;
+         }
+         img {
+            width: 25%;
+            border: 3px black inset;
+         }
+
+         @media screen and (max-width: 768px) {
+            select {
+               width: 50%;
+            }
+            img {
+               width: 50%;
+            }
+         }
+
+         @media screen and (max-width: 576px) {
+            select {
+               width: 70%;
+            }
+            img {
+               width: 70%;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <select id="pilih" onchange="gambar()">
+         <option hidden>Pilih Gambar</option>
+         <option value="angsa">Angsa</option>
+         <option value="burung">Burung</option>
+         <option value="kucing">Kucing</option>
+         <option value="kelinci">Kelinci</option>
+         <option value="ayam">Ayam</option>
+         <option value="panda">Panda</option>
+         <option value="kupukupu">Kupu-Kupu</option>
+      </select>
+      <span id="gambar"></span>
+
+      <script>
+         function gambar() {
+            let pilih = document.getElementById("pilih").value;
+
+            const angsa = '<br><br><img src="https://cdn.idntimes.com/content-images/community/2022/06/fromandroid-96b8a0b9397daa0f7667662f1bf063ad_600x400.jpg">';
+            const burung = '<br><br><img src="https://assets.kompasiana.com/items/album/2021/04/01/ilustrasi-burung-biru-foto-jooin-60659abfd541df388f33fb83.jpg?t=o&v=770">';
+            const kucing = '<br><br><img src="https://images.bisnis.com/posts/2023/03/12/1636532/3._kucing_anggora__ciri,_jenis,_cara_merawat,_dan_harganya_-_daily_paws.jpg">';
+            const kelinci = '<br><br><img src="https://ruber.id/wp-content/uploads/2021/12/Memelihara-Kelinci.jpg">';
+            const ayam = '<br><br><img src="https://s.kaskus.id/images/2015/06/06/5912239_20150606084318.jpg">';
+            const panda = '<br><br><img src="https://studio.mrngroup.co/storage/app/media/Prambors/Editorial%202/panda-20221230102609.webp?tr=w-600">';
+            const kupukupu = '<br><br><img src="https://asset.kompas.com/crops/k1XcF4y-3pfXpezv3uvZOdfcXc0=/0x0:1279x853/1200x800/data/photo/2022/07/22/62daa4ff6f40d.jpg">';
+
+            if (pilih == "angsa") {
+               document.getElementById("gambar").innerHTML = angsa;
+               alert("Ini gambar Angsa");
+            } else if (pilih == "burung") {
+               document.getElementById("gambar").innerHTML = burung;
+               alert("Ini gambar Burung");
+            } else if (pilih == "kucing") {
+               document.getElementById("gambar").innerHTML = kucing;
+               alert("Ini gambar Kucing");
+            } else if (pilih == "kelinci") {
+               document.getElementById("gambar").innerHTML = kelinci;
+               alert("Ini gambar Kelinci");
+            } else if (pilih == "ayam") {
+               document.getElementById("gambar").innerHTML = ayam;
+               alert("Ini gambar Ayam");
+            } else if (pilih == "panda") {
+               document.getElementById("gambar").innerHTML = panda;
+               alert("Ini gambar Panda");
+            } else if (pilih == "kupukupu") {
+               document.getElementById("gambar").innerHTML = kupukupu;
+               alert("Ini gambar Kupu-Kupu");
+            }
+         }
+      </script>
+   </body>
+</html>

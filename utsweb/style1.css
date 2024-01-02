@@ -1,0 +1,43 @@
+body {
+    
+    font-family: 'Times New Roman';
+}
+
+fieldset {
+    background-color: beige;
+    width: 50%;
+    margin: auto;
+}
+legend {
+    color: blue ;
+    font-weight: bold;
+}
+
+form {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+th {
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 2%;
+    font-weight: normal;
+}
+
+.daftar {
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.batal {
+    background-color: red;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

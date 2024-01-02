@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Rupiah Ke Dollar</title>
+  </head>
+  <body>
+    <h1>Konversi Rupiah Ke Dollar</h1>
+    <label for="jumlahRupiah">Jumlah uang rupiah :</label>
+    <input type="number" id="rupiah" />
+    <button onclick="hitungDollar()" style="background-color: aqua;">Konversi</button>
+    <p>Hasil Konversi : <span id="hasilKonversiRupiah"></span></p>
+
+    <h1>Konversi Dollar ke Rupiah</h1>
+    <label for="jumlahDollar">Jumlah uang dollar :</label>
+    <input type="number" id="dollar" />
+    <button onclick="hitungRupiah()" style="background-color: aqua;">Konversi</button>
+    <p>Hasil Konversi : <span id="hasilKonversiDollar"></span></p>
+    <script>
+      function hitungDollar() {
+        let uangRupiah = document.getElementById("rupiah").value;
+        const kursDollar = 14650;
+
+        let nilaiDollar = uangRupiah / kursDollar
+        document.getElementById("hasilKonversiRupiah").innerHTML =  nilaiDollar.toFixed(2) + "$";
+      }
+
+      function hitungRupiah() {
+        let uangDollar = document.getElementById("dollar").value;
+        const kursRupiah = 14650;
+
+        let nilaiRupiah = uangDollar * kursRupiah
+        document.getElementById("hasilKonversiDollar").innerHTML =  nilaiRupiah + " Rupiah";
+      }
+    </script>
+  </body>
+</html>

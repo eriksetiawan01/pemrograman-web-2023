@@ -1,0 +1,47 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.header, .footer, article, aside {
+    padding: 30px;
+}
+
+.container {
+    display: grid;
+    margin-left: 20%;
+}
+
+.content {
+    display: flex;
+}
+* {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header, .footer {
+    background-color: khaki;
+    flex: 1;
+    
+}
+
+
+nav {
+    background-color: pink;
+    height: 100%;
+    position: fixed;
+    width: 20%;
+    padding: 3%;
+}
+
+article {
+    background-color: white;
+    flex: 1;
+}
+
+aside {
+    background-color: aqua;
+    flex: 0.5;
+
+}

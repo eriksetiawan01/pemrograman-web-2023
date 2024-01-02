@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Chat Box</title>
+      <style>
+         fieldset {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+         }
+         legend {
+            text-align: center;
+         }
+         #container {
+            width: 90%;
+            height: 200px;
+            border: 1px solid black;
+            overflow-y: scroll;
+            padding: 20px;
+            margin: auto;
+            background-color: azure;
+         }
+         .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+         }
+         #pesanInput {
+            flex: 1;
+            margin-right: 10px;
+         }
+         button {
+            color: black;
+            background-color: aqua;
+         }
+         button:hover {
+            color: aqua;
+            background-color: black;
+         }
+
+         @media screen and (max-width: 768px) {
+            fieldset {
+               width: 80%;
+            }
+            #container {
+               width: 100%;
+            }
+         }
+
+         @media screen and (max-width: 576px) {
+            fieldset {
+               width: 90%;
+            }
+            .container {
+               flex-direction: column;
+               align-items: stretch;
+            }
+            #pesanInput {
+               margin-right: 0;
+               margin-bottom: 10px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <fieldset>
+         <legend><h2>Chat Box</h2></legend>
+         <div id="container">
+            <div id="chatPesan"></div>
+         </div>
+         <div class="container">
+            <input type="text" id="pesanInput" placeholder="Ketikan pesan anda..." />
+            <button onclick="kirimPesan()" type="submit">Kirim</button>
+         </div>
+      </fieldset>
+
+      <script>
+         function kirimPesan() {
+            let pesanInput = document.getElementById("pesanInput");
+            let pesan = pesanInput.value;
+
+            if (pesan.trim() !== "") {
+               let chatPesan = document.getElementById("chatPesan");
+               let pesanBaru = document.createElement("div");
+               pesanBaru.textContent = pesan;
+               chatPesan.appendChild(pesanBaru);
+               pesanInput.value = "";
+
+               chatPesan.scrollTop = chatPesan.scrollHeight;
+            }
+         }
+      </script>
+   </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-color: rgba(255, 192, 203, 0.813);
+    text-align: center;
+    display: flex;
+}
+
+.container {
+    display: grid;
+}
+
+* {
+    box-sizing: border-box;
+    height: auto;
+}
+.header {
+    background-color: aquamarine;
+    height: 100px;
+    padding: 40px;
+}
+
+.footer {
+    background-color: aquamarine;
+    height: 100px;
+    padding: 40px;
+}
+
+.content {
+    display: flex;
+    padding: 1% 0;
+}
+
+aside {
+    background-color: rgb(21, 230, 230);
+    width: 25%;
+    height: 500px ;
+    margin-right: 5px;
+    padding:230px 0;
+}
+
+article {
+    background-color: rgba(222, 24, 57, 0.792);
+    width: 75%;
+    margin-left: 5px;
+}
+
+
+.gambar, img{
+    display: flex;
+    width: 50%;
+    padding: 2% ;
+    margin-top:100px;
+    margin-left: 50px;
+}

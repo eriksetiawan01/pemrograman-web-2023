@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kurs Rupiah</title>
+      <link rel="stylesheet" href="style.css" />
+      <style>
+         fieldset {
+            background-color: #d4fffe;
+            text-align: center;
+            margin: auto;
+            width: 50%;
+         }
+         table {
+            margin: auto;
+            width: auto;
+         }
+      </style>
+   </head>
+   <body>
+      <fieldset>
+         <legend><h3>Kurs Rupiah - Mata Uang Asing</h3></legend>
+         <table border="2">
+            <tr>
+               <th>Masukan Nilai</th>
+               <th>Valas</th>
+               <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+               <td>
+                  <input type="number" id="nilaiUang" onchange="hitungUang()" />
+               </td>
+               <td>
+                  <select name="" id="mataUang" onchange="hitungUang()">
+                     <option>--Pilih Mata Uang--</option>
+                     <option value="dollarUS">Dollar US</option>
+                     <option value="dollarSingapura">Dollar Singapura</option>
+                     <option value="ringgitMalaysia">Ringgit Malaysia</option>
+                     <option value="yenJepang">Yen Jepang</option>
+                     <option value="euro">Euro</option>
+                     <option value="riyalArabSaudi">Riyal Arab saudi</option>
+                  </select>
+               </td>
+               <td>
+                  <label><span id="hasilUang">0</span></label>
+               </td>
+            </tr>
+         </table>
+      </fieldset>
+
+      <script>
+         function hitungUang() {
+            let nilaiUang = document.getElementById("nilaiUang").value;
+            let MataUang = document.getElementById("mataUang").value;
+
+            const DollarUS = 9915;
+            const DollarSingapura = 13472;
+            const RinggitMalaysia = 874;
+            const YenJepang = 120;
+            const Euro = 15888;
+            const RiyalArabSaudi = 3592;
+
+            let hasil = 0;
+            if (MataUang == "dollarUS") {
+               hasil = nilaiUang * DollarUS;
+            } else if (MataUang == "dollarSingapura") {
+               hasil = nilaiUang * DollarSingapura;
+            } else if (MataUang == "ringgitMalaysia") {
+               hasil = nilaiUang * RinggitMalaysia;
+            } else if (MataUang == "yenJepang") {
+               hasil = nilaiUang * YenJepang;
+            } else if (MataUang == "euro") {
+               hasil = nilaiUang * Euro;
+            } else if (MataUang == "riyalArabSaudi") {
+               hasil = nilaiUang * RiyalArabSaudi;
+            }
+
+            let hitung = (document.getElementById("hasilUang").innerHTML = hasil.toLocaleString() + " Rupiah");
+         }
+      </script>
+   </body>
+</html>

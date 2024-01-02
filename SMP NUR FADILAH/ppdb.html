@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMP NUR FADILAH</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- form builder -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body id="beranda">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  shadow fixed-top bg-transparent text-body">
+      <div class="container">
+        <img src="img/logo sekolah.png" alt="Logo Sekolah" width="50px" />
+        <a class="navbar-brand ms-2" href="#">SMP NUR FADILAH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+              <ul class="dropdown-menu bg-transparent">
+                <li><a class="dropdown-item" href="#tentang">Tentang SMP NUR FADILAH</a></li>
+                <li><a class="dropdown-item" href="#visimisi">Visi & Misi</a></li>
+                <li><a class="dropdown-item" href="#struktur">Struktur</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Akademik</a>
+              <ul class="dropdown-menu bg-transparent">
+                <li><a class="dropdown-item" href="#guru">Daftar Guru</a></li>
+                <li><a class="dropdown-item" href="#perpustakaan">Perpustakaan</a></li>
+                <li><a class="dropdown-item" href="#ppdb">Penerimaan Peserta Didik Baru</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeri</a>
+              <ul class="dropdown-menu bg-transparent">
+                <li><a class="dropdown-item" href="#">Foto</a></li>
+                <li><a class="dropdown-item" href="#">Video</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ekstrakulikuler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control ms-2 me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-info rounded-pill" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <Section class="siswabaru">
+    <div class="form-container">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center mb-5">Formulir Pendaftaran Peserta Didik Baru</h2>
+                    <ul>
+                        <li>
+                            <h4 class="mb-4">Informasi Pribadi</h4>
+                        </li>
+                        <form class="ms-5">
+                            <div class="form-group row">
+                                <label for="namalengkap" class="col-md-3 col-form-label">Nama Lengkap</label> 
+                                <div class="col-8">
+                                    <input id="namalengkap" name="namalengkap" placeholder="Masukan Nama Lengkap" type="text" class="form-control" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tempatlahir" class="col-md-3 col-form-label">Tempat Lahir</label> 
+                              <div class="col-8">
+                                  <input id="tempatlahir" name="tempatlahir" placeholder="Masukan Tempat Lahir" type="text" class="form-control" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tanggallahir" class="col-md-3 col-form-label">Tanggal Lahir</label> 
+                                <div class="col-8">
+                                    <input id="tanggallahir" name="tanggallahir" placeholder="Masukan Tanggal Lahir" type="date" class="form-control" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="usia" class="col-md-3 col-form-label">Usia</label> 
+                                <div class="col-8">
+                                    <input id="usia" name="usia" placeholder="Masukan Usia" type="number" class="form-control" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3">Jenis Kelamin</label> 
+                                <div class="col-8">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input name="jeniskelamin" id="jeniskelamin_0" type="radio" class="custom-control-input" value="lakilaki" required="required"> 
+                                        <label for="jeniskelamin_0" class="custom-control-label">Laki Laki</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input name="jeniskelamin" id="jeniskelamin_1" type="radio" class="custom-control-input" value="perempuan" required="required"> 
+                                        <label for="jeniskelamin_1" class="custom-control-label">Perempuan</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="alamatlengkap" class="col-md-3 col-form-label">Alamat Lengkap</label> 
+                                <div class="col-8">
+                                    <textarea id="alamatlengkap" name="alamatlengkap" cols="40" rows="3" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="notelpon" class="col-md-3 col-form-label">No. Telpon</label> 
+                                <div class="col-8">
+                                    <input id="notelpon" name="notelpon" placeholder="Masukan No. Telpon Aktif" type="number" class="form-control" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-3 col-form-label">Email</label> 
+                                <div class="col-8">
+                                    <input id="email" name="email" placeholder="Masukan Email" type="email" class="form-control" required="required">
+                                </div>
+                            </div> 
+                            <div class="form-group row">
+                                <div class="offset-4 col-8">
+                                    <button class="daftar" name="submit" type="submit">Daftar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#40c9ff"
+        fill-opacity="1"
+        d="M0,96L40,122.7C80,149,160,203,240,224C320,245,400,235,480,213.3C560,192,640,160,720,144C800,128,880,128,960,149.3C1040,171,1120,213,1200,224C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+      ></path>
+    </svg>
+    </Section>
+
+
+    <!-- Footer -->
+    <footer class="text-black pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="text-center border-bottom pb-2 border-black">Informasi Kontak</h4>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-geo-alt-fill text-white"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-start"> Jl. Raya Lenteng Agung, RT.4/RW.1, Srengseng Sawah, Kec. Jagakarsa, Jakarta Selatan,</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-telephone-fill text-white"></i>
+              </div>
+              <div class="col-10">
+                <p>Hotline : 088212348765</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-envelope-fill text-white"></i>
+              </div>
+              <div class="col-10">
+                <p>Informasi@nurfadilah.ac.id</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center border-bottom pb-2 border-black">Media</h4><hr>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-instagram text-white"></i>
+              </div>
+              <div class="col-10">
+               <p><a href="#" class="text-black">@smp_nurfadilah</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-facebook text-white"></i>
+              </div>
+              <div class="col-10">
+                <p><a href="" class="text-black">smp_nurfadilah</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-twitter text-white"></i>
+              </div>
+              <div class="col-10">
+                <p><a href="" class="text-black">smp_nurfadilah</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-whatsapp text-white"></i>
+              </div>
+              <div class="col-10">
+                <p><a href="" class="text-black">085701101234</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center border-bottom pb-2 border-black">Cabang</h4><hr>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-chevron-right text-white"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-start"><a href="https://maps.app.goo.gl/UC5RpdihWp8yoSyC9" class="text-black">SMP Nur Fadilah Bogor</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-chevron-right text-white"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-start"><a href="https://maps.app.goo.gl/2CbEMqktGuE4Ke8p8" class="text-black">SMP Nur Fadilah Depok</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-chevron-right text-white"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-start"><a href="https://maps.app.goo.gl/us8mfHZWorRWMzW38" class="text-black">SMP Nur Fadilah Jakarta</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-chevron-right text-white"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-start"><a href="https://maps.app.goo.gl/VE3EeQsPGxJzWHQE8" class="text-black">SMP Nur Fadilah Tangerang</a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center border-bottom border-black pb-2">Lokasi</h4><hr>
+            <div class="row">
+              <div class="col text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126829.29180933227!2d106.70948942688156!3d-6.595186739314332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b7ad0f824b%3A0x4c71fd1b0b8ae76d!2sKota%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1702330780959!5m2!1sid!2sid" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-5">Created by @<a href="https://instagram.com/erik_setiaone11" class="text-black fw-bold">Erik Setiawan</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

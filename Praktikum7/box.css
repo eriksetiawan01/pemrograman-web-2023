@@ -1,0 +1,37 @@
+#container {
+    display: flex;
+}
+
+.box1 {
+    background-color: red;
+    width: 15%;
+    height: 25em;
+}
+
+.box2 {
+    background-color: yellow;
+    width: 15%;
+    height: 25em;
+    
+}
+
+.box3 {
+    background-color: green;
+    width: 15%;
+    height: 25em;
+    
+}
+
+.box4 {
+    background-color: blue;
+    width: 15%;
+    height: 25em;
+    
+}
+
+.box5 {
+    background-color: purple;
+    width: 15%;
+    height: 25em;
+
+}

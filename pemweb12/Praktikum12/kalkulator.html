@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Javascript</title>
+  </head>
+  <body>
+    <h2>Kalkulator Sederhana</h2>
+    <label for="value1">Bilangan 1 :</label>
+    <input type="number" id="value1" />
+    <br />
+    <br />
+    <label for="value2">Bilangan 2 :</label>
+    <input type="number" id="value2" />
+    <br />
+    <br />
+    <label for="operator"> Pilih operator :</label>
+    <select name="" id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="/">/</option>
+      <option value="*">*</option>
+    </select>
+    <br />
+    <br />
+    <button onclick="hitung()">Hitung</button>
+    <hr />
+    <h5 id="hasil">0</h5>
+
+    <script>
+      function hitung() {
+        let bilangan1 = parseInt(document.getElementById("value1").value);
+        let bilangan2 = parseInt(document.getElementById("value2").value);
+        let operator = document.getElementById("operator").value;
+
+        // Pengecekan get elemen
+        console.log("bilangan1");
+        console.log("bilangan2");
+        console.log("operator");
+
+        let total = 0;
+        if (operator == "+") {
+          total = bilangan1 + bilangan2;
+        } else if (operator == "-") {
+          total = bilangan1 - bilangan2;
+        } else if (operator == "/") {
+          total = bilangan1 / bilangan2;
+        } else if (operator == "*") {
+          total = bilangan1 * bilangan2;
+        }
+
+        let hasil = document.getElementById("hasil");
+        hasil.innerHTML = total;
+      }
+    </script>
+  </body>
+</html>
