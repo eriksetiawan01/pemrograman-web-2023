@@ -9,7 +9,7 @@ def convert_length():
             result = input_length / 100000
             result_label.config(text=f"Hasil: {input_length} cm = {result} km")
         elif selected_unit == "cm to mm":
-            result = input_length * 10
+            result = input_length * 10  
             result_label.config(text=f"Hasil: {input_length} cm = {result} mm")
         elif selected_unit == "km to cm":
             result = input_length * 100000
@@ -23,6 +23,12 @@ def convert_length():
         elif selected_unit == "cm to m":
             result = input_length / 100
             result_label.config(text=f"Hasil: {input_length} cm = {result} m")
+        elif selected_unit == "m to km":
+            result = input_length / 1000
+            result_label.config(text=f"Hasil: {input_length} m = {result} km")
+        elif selected_unit == "km to m":
+            result = input_length * 1000
+            result_label.config(text=f"Hasil: {input_length} km = {result} m")
         else:
             result_label.config(text="Pilih konversi yang benar!")
     except ValueError:
@@ -42,7 +48,10 @@ entry.grid(row=0, column=1, padx=5, pady=5)
 
 dropdown = tk.StringVar(root)
 dropdown.set("Pilih konversi")
-options = ["cm to km", "cm to mm", "km to cm", "mm to cm", "m to cm", "cm to m"]
+options = [
+    "cm to km", "cm to mm", "km to cm", "mm to cm", 
+    "m to cm", "cm to m", "m to km", "km to m"
+]
 menu = tk.OptionMenu(frame, dropdown, *options)
 menu.grid(row=1, columnspan=2, padx=5, pady=5)
 
